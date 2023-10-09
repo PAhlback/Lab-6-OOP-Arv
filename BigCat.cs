@@ -14,9 +14,10 @@ namespace Lab_6_OOP_Arv
         {
             HatesMowgli = hatesMowgli;
         }
+
         public void LayingInAmbush()
         {
-            Console.WriteLine("Shere Khan is chilling by the pool, not laying in ambush.");
+            Console.WriteLine("Shere Khan is chilling in the tree, not laying in ambush for Mowgli wink-wink.");
         }
 
         public override void Eat()
@@ -26,7 +27,7 @@ namespace Lab_6_OOP_Arv
 
         public override void MakeSound()
         {
-            Console.WriteLine("Mowgli... they've given it a name!");
+            Console.WriteLine("\"Mowgli... they've given it a name!\"");
         }
 
         public override void Play()

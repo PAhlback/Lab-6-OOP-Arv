@@ -9,6 +9,7 @@ namespace Lab_6_OOP_Arv
     internal class Equus : Animal
     {
         public string ManeLength { get; set; }
+
         public Equus(string name, int age, string color, string species, string diet, string maneLength) : base(name, age, color, species, diet)
         {
             ManeLength = maneLength;
@@ -25,7 +26,7 @@ namespace Lab_6_OOP_Arv
 
         public override void MakeSound()
         {
-            Console.WriteLine("Neigh!");
+            Console.WriteLine("neigh!");
         }
 
         public override void Play()

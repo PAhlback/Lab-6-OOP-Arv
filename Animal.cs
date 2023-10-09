@@ -8,11 +8,14 @@ namespace Lab_6_OOP_Arv
 {
     internal abstract class Animal
     {
+        // Properties shared
         public string Name { get; set; }
         public int Age { get; set; }
         public string Color { get; set; }
         public string Species { get; set; }
         public string Diet { get; set; }
+
+        // Ctor all animals runs
         public Animal(string name, int age, string color, string species, string diet)
         {
             Name = name;
@@ -22,6 +25,7 @@ namespace Lab_6_OOP_Arv
             Diet = diet;
         }
 
+        // Methods all animals have to have
         public abstract void MakeSound();
         public abstract void Play();
         public abstract void Eat();

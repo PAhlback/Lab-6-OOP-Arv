@@ -8,8 +8,11 @@ namespace Lab_6_OOP_Arv
 {
     internal class Canine : Animal
     {
-        public Canine(string name, int age, string color, string species, string diet) : base(name, age, color, species, diet)
+        public bool HasBigEyesAndEars { get; set; }
+
+        public Canine(string name, int age, string color, string species, string diet, bool hasBigEyesAndEars) : base(name, age, color, species, diet)
         {
+            HasBigEyesAndEars = hasBigEyesAndEars;
         }
 
         public override void Eat()

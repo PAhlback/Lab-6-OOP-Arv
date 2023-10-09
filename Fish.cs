@@ -9,6 +9,7 @@ namespace Lab_6_OOP_Arv
     internal class Fish : Animal
     {
         public bool TechnicallyFish {  get; set; }
+
         public Fish(string name, int age, string color, string species, string diet, bool technicallyFish) : base(name, age, color, species, diet)
         {
             TechnicallyFish = technicallyFish;

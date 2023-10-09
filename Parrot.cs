@@ -9,6 +9,7 @@ namespace Lab_6_OOP_Arv
     internal class Parrot : Bird
     {
         public int NumberOfWordsLearnt {  get; set; }
+
         public Parrot(string name, int age, string color, string species, string diet, bool flightless, int numberOfWordsLearnt) : base(name, age, color, species, diet, flightless)
         {
             NumberOfWordsLearnt = numberOfWordsLearnt;
