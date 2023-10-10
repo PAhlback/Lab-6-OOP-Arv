@@ -17,22 +17,41 @@ namespace Lab_6_OOP_Arv
 
         public void LayingInAmbush()
         {
-            Console.WriteLine("Shere Khan is chilling in the tree, not laying in ambush for Mowgli wink-wink.");
+            Console.WriteLine($"{Name} is chilling in the tree, not laying in ambush for Mowgli wink-wink.");
         }
 
         public override void Eat()
         {
-            Console.WriteLine($"Shere Khan is chomping on some meat. Wait, where'd Mowgli go?");
+            Console.Write($"{Name} is chomping on some meat. ");
+
+            if (Name == "Shere Khan")
+            {
+                Console.WriteLine("Wait, where'd Mowgli go?");
+            }
         }
 
         public override void MakeSound()
         {
-            Console.WriteLine("\"Mowgli... they've given it a name!\"");
+            if (Name == "Shere Khan")
+            {
+                Console.WriteLine("\"Mowgli... they've given it a name!\"");
+            }
+            else
+            {
+                Console.WriteLine("GROWL");
+            }
         }
 
         public override void Play()
         {
-            Console.WriteLine("The king does not play...");
+            if (Name == "Shere Khan")
+            {
+                Console.WriteLine("The king does not play...");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is running back and forth chasing some bug or something.");
+            }  
         }
     }
 }

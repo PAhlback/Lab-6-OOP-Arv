@@ -16,12 +16,19 @@ namespace Lab_6_OOP_Arv
         }
         public void WithGandalf()
         {
-            Console.WriteLine("Shadowfax is travelling west with Gandalf on the White Ship");
+            if (Name == "Shadowfax")
+            {
+                Console.WriteLine("Shadowfax is travelling west with Gandalf on the White Ship");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is not with Gandalf.");
+            }
         }
 
         public override void Eat()
         {
-            Console.WriteLine($"Shadowfax is dining on some fancy hay.");
+            Console.WriteLine($"{Name} is dining on some fancy hay.");
         }
 
         public override void MakeSound()
@@ -31,7 +38,7 @@ namespace Lab_6_OOP_Arv
 
         public override void Play()
         {
-            Console.WriteLine("Shadowfax is running around jumping and stuff.");
+            Console.WriteLine($"{Name} is running around jumping and stuff.");
         }
     }
 }

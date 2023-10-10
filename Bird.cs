@@ -17,17 +17,31 @@ namespace Lab_6_OOP_Arv
 
         public override void Eat()
         {
-            Console.WriteLine("Pecking on some seeds.");
+            if (Diet == "Herbivore")
+            {
+                Console.WriteLine("Pecking on some seeds.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is eating some tasty fish");
+            }
         }
 
         public override void MakeSound()
         {
-            Console.WriteLine("Chirp-chirp!");
+            if (Species.Contains("Eagle"))
+            {
+                Console.WriteLine($"{Name} sounds a bit like a seagull...");
+            }
+            else
+            {
+                Console.WriteLine("Chirp-chirp!");
+            }
         }
 
         public override void Play()
         {
-            Console.WriteLine("Throwing sticks on anyone walking below.");
+            Console.WriteLine("Throwing sticks on everyone walking below.");
         }
     }
 }

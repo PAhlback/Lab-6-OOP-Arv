@@ -14,15 +14,15 @@ namespace Lab_6_OOP_Arv
         {
             HappyFeet = happyFeet;
         }
-        public void Dancing(Penguin p)
+        public void Dancing()
         {
-            if (p.HappyFeet == true)
+            if (HappyFeet == true)
             {
-                Console.WriteLine($"{p.Name} is dancing away!");
+                Console.WriteLine($"{Name} is dancing away!");
             }
             else 
             {
-                Console.WriteLine($"{p.Name} doesn't have happy feet :(");
+                Console.WriteLine($"{Name} doesn't have happy feet :(");
             }
         }
     }

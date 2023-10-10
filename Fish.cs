@@ -16,22 +16,50 @@ namespace Lab_6_OOP_Arv
         }
         public void IsAngry()
         {
-            Console.WriteLine("Of course Moby Dick is angry, he's got several harpoons stuck in him...");
+            if (Name == "Moby Dick")
+            {
+                Console.WriteLine($"Of course {Name} is angry, he's got several harpoons stuck in him...");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is probably not angry.");
+            }
         }
 
         public override void Eat()
         {
-            Console.WriteLine("Moby is eating all the squid he can see.");
+            if (Name == "Moby Dick") 
+            {
+                Console.WriteLine("Moby is eating all the squid he can see.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is eating some sweet tasting fish food.");
+            } 
         }
 
         public override void MakeSound()
         {
-            Console.WriteLine("OOOoooOOOOOoooOOOoOOOo");
+            if (Species.Contains("Whale"))
+            {
+                Console.WriteLine("OOOoooOOOOOoooOOOoOOOo");
+            }
+            else
+            {
+                Console.WriteLine("Blub blub");
+            }
         }
 
         public override void Play()
         {
-            Console.WriteLine("Moby is being a dick and playing tag with every ship he can spot.");
+            if (Name == "Moby Dick")
+            {
+                Console.WriteLine("Moby is being a dick and playing tag with every ship he can spot.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is just swimming around.");
+            }    
         }
     }
 }

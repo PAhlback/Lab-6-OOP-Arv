@@ -8,7 +8,7 @@ namespace Lab_6_OOP_Arv
 {
     internal abstract class Animal
     {
-        // Properties shared
+        // Properties shared between all animals
         public string Name { get; set; }
         public int Age { get; set; }
         public string Color { get; set; }
@@ -25,7 +25,7 @@ namespace Lab_6_OOP_Arv
             Diet = diet;
         }
 
-        // Methods all animals have to have
+        // Methods all animals must have
         public abstract void MakeSound();
         public abstract void Play();
         public abstract void Eat();
