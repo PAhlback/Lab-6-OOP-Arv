@@ -7,11 +7,13 @@ namespace Lab_6_OOP_Arv
     {
         static void Main(string[] args)
         {
+            // Instantiates four animals. 
             BigCat tiger = new BigCat("Shere Khan", 10, "Orange with black stripes", "Bengal Tiger", "Carnivore", true);
             Equus horse = new Equus("Shadowfax", 6, "Silvery-gray", "Mearas", "Herbivore", "Medium");
             Fish whale = new Fish("Moby Dick", 65, "White", "Sperm Whale", "Carnivore", false);
             Penguin penguin = new Penguin("Mumble", 3, "Black with a white belly", "Emperor Penguin", "Carnivore", true, true);
 
+            // Runs the MakeSound method for each of the for animal objects. Then runs three unique methods for three of the classes.
             Console.Write($"The {tiger.Species} {tiger.Name} says: ");
             tiger.MakeSound();
             Console.Write($"The {horse.Species} {horse.Name} makes the sound ");
